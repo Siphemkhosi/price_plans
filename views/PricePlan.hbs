@@ -1,14 +1,4 @@
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Document</title>
-     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body><header class="header">
+ <header class="header">
   <nav class="navbar navbar-style">
 <div class="container">
 <div class="navbar-hearder">
@@ -21,8 +11,8 @@
 </div>
 <div class="collapse navbar-collapse" id="micon">
 <ul class="nav navbar-nav navbar-right" >
-  <li><a href="/home">Home</a></li>
- <li><a href="/PricePlan" >Price Plan</a></li>
+  <li><a href="../home">Home</a></li>
+ <li><a href="PricePlan" >Plans</a></li>
    
 </ul>
 
@@ -31,7 +21,7 @@
   </nav>
   
 </header>
-    <form action="/priceplan" method="POST">
+   <form action="/PricePlan" method="POST">
          <h1>Total phone bill with price plan</h1>
                 {{#if messages.info}}
 <div style="text-align:center; " class="entry">
@@ -58,7 +48,4 @@
         <input type="radio" name="radioButn" value="callWeekly" />callWeekly
       </div>
          <button type="submit" class="submit" >Allocate</button>
-    <p class="response" style="text-align:center;">{{userName}} </p>
-    </form>
-</body>
-</html>
+    <p class="response" style="text-align:center;">{{userName}} 
